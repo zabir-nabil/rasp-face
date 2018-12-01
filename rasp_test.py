@@ -1,10 +1,16 @@
 import picamera
 from time import sleep
 from PIL import Image
+from keras.models import Sequential
+from keras.layers import Dense, Conv2D, MaxPooling2D, Dropout, Flatten
+import keras
+import numpy as np
+from PIL import Image
+from keras.models import load_model
 
 # confidence check with same class for continuous 3 frames
 v1 = 0, v2 = 0, v3 = 0
-
+model1 = load_model('rasp-face1.h5')
 print('--------------------------------------------------\n')
 xx = input('The program will run for X frames, Enter X (Example 100): ')
 xx = int(xx)
