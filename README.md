@@ -17,3 +17,10 @@ test: [3.5237612545082944, 0.7782840037671743]
    Low size model https://drive.google.com/open?id=1hSf3bX1I7u78hszNSaHMODUfPZaIW8hV
 2. Run script rasp_test.py
 3. To re-train the model with more classes -> raspberry-pi-face-detection.ipynb
+
+
+# Instructions (Eigen-face)
+
+1. Download the trained model https://drive.google.com/open?id=1O_EBYmE1HuX5vcTrzG9Cw1Md4EojjsAx
+2. Run script rasp_test_svm.py
+3. To re-train the model with more classes -> eigen-face.ipynb
